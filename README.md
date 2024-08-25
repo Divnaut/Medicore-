@@ -26,12 +26,12 @@ Prototype for medical system app.
     ```
 3.  Create a virtual environment:
     ```bash
-    conda env create --medicore.yml
+    conda env create --file medicore.yml
     ```
 4.  to continuously update your conda env use 
     ```bash
     conda activate medicore
-    conda env update -f medicore.yml
+    conda env update --file medicore.yml
     ```
 
 ## Usage
