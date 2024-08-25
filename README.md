@@ -24,17 +24,18 @@ A brief description of what your project does.
     ```bash
     cd yourprojectname
     ```
-3. (Optional) Create a virtual environment:
+3.  Create a virtual environment:
     ```bash
-    python -m venv env
-    source env/bin/activate   # On Windows: env\Scripts\activate
+    conda create --name medicore
     ```
-4. Install the necessary dependencies:
+4.to continuously update your conda env use 
     ```bash
-    pip install -r requirements.txt
+    conda activate medicore
+    conda env update -f dependencies.yml
     ```
 
 ## Usage
+
 
 Provide instructions and examples for using your project. Include any relevant code snippets.
 
