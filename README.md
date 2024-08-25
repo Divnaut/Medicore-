@@ -28,7 +28,7 @@ Prototype for medical system app.
     ```bash
     conda env create --medicore.yml
     ```
-4.to continuously update your conda env use 
+4.  to continuously update your conda env use 
     ```bash
     conda activate medicore
     conda env update -f medicore.yml
