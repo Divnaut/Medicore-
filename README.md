@@ -22,16 +22,16 @@ A brief description of what your project does.
     ```
 2. Navigate to the project directory:
     ```bash
-    cd yourprojectname
+    cd medicore
     ```
 3.  Create a virtual environment:
     ```bash
-    conda create --name medicore
+    conda env create --medicore.yml
     ```
 4.to continuously update your conda env use 
     ```bash
     conda activate medicore
-    conda env update -f dependencies.yml
+    conda env update -f medicore.yml
     ```
 
 ## Usage
