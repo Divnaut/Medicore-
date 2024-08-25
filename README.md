@@ -4,7 +4,7 @@
 
 ## Description
 
-A brief description of what your project does.
+Prototype for medical system app. 
 
 ## Table of Contents
 
