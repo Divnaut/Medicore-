@@ -118,7 +118,6 @@ class Symptoms(BaseModel):
     stomach_bleeding: int
     distention_of_abdomen: int
     history_of_alcohol_consumption: int
-    fluid_overload: int
     blood_in_sputum: int
     prominent_veins_on_calf: int
     palpitations: int

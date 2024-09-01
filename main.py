@@ -9,8 +9,8 @@ from sklearn.preprocessing import LabelEncoder
 
 #creating the app object:
 app=FastAPI()
-pickle_in=open("svc.pkl", "rb")
-svc=pickle.load(pickle_in)
+pickle_in=open("rfc_v3.pkl", "rb")
+gbc=pickle.load(pickle_in)
 
 
 @app.post('/predict')
@@ -137,7 +137,6 @@ def predict_disease(data: Symptoms):
     stomach_bleeding=data['stomach_bleeding']
     distention_of_abdomen=data['distention_of_abdomen']
     history_of_alcohol_consumption=data['history_of_alcohol_consumption']
-    fluid_overload=data['fluid_overload']
     blood_in_sputum=data['blood_in_sputum']
     prominent_veins_on_calf=data['prominent_veins_on_calf']
     palpitations=data['palpitations']
@@ -152,7 +151,7 @@ def predict_disease(data: Symptoms):
     blister=data['blister']
     red_sore_around_nose=data['red_sore_around_nose']
     yellow_crust_ooze=data['yellow_crust_ooze']
-    prediction=le.inverse_transform(svc.predict([[itching,
+    prediction=le.inverse_transform(gbc.predict([[itching,
                                                   skin_rash,
                                                   nodal_skin_eruptions,
                                                   continuous_sneezing,
@@ -268,7 +267,6 @@ coma,
 stomach_bleeding,
 distention_of_abdomen,
 history_of_alcohol_consumption,
-fluid_overload,
 blood_in_sputum,
 prominent_veins_on_calf,
 palpitations,
